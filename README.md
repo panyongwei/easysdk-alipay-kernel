@@ -28,7 +28,7 @@ QQ交流群：57914282
 ## 安装
 
 ```shell
-composer require panyongwei/easysdk-alipay-kernel:~1.0.0 -vvv
+composer require panyongwei/easysdk-alipay-kernel:~0.0.1 -vvv
 ```
 
 ## 基于 easysdk-alipay-kernel 开发自己的类库
@@ -49,7 +49,7 @@ composer require panyongwei/easysdk-alipay-kernel:~1.0.0 -vvv
     ├── AlipayPay.php               入口文件通过这个文件去 Application.php 注册服务和调用
     ├── Application.php             服务提供者文件，负责注册和调用不同模块的服务对象             
     ├── F2fpay                      面对面支付实例
-        ├── Client.php              面对面支付api对接代码
+        ├── Client.php              面对面支付api对接代码，开发者都在这里编写业务逻辑
         └── ServiceProvider.php     面对面支付宝服务提供者注册代码
 └── vendor
 ```
@@ -122,6 +122,7 @@ use EasySDK\AlipayKernel\BaseClient;
 class Client extends BaseClient
 {
     /**
+     * 面对面付款下单接口功能
      * 统一收单交易支付接口
      * 参数参考：https://opendocs.alipay.com/apis/api_1/alipay.trade.precreate
      * @param array $params
