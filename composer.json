@@ -18,10 +18,5 @@
     "ext-mbstring": "*",
     "pimple/pimple": "^3.4",
     "guzzlehttp/guzzle": "^7.3"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "0.0.1-dev "
-    }
   }
 }
