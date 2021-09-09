@@ -1,0 +1,27 @@
+{
+  "name": "sphynx/easysdk-alipay-kernel",
+  "description": "EasySDK支付宝核心库",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Sphynx",
+      "email": "admin@mail.sunnyos.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "EasySDK\\AlipayKernel\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2.5",
+    "ext-mbstring": "*",
+    "pimple/pimple": "^3.4",
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.1-dev "
+    }
+  }
+}
